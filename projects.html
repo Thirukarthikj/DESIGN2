@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Classic Interior</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .filter-btn {
+            padding: 12px 20px;
+            border: 1px solid var(--border);
+            background: white;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--dark);
+            color: white;
+        }
+
+        .gallery-card {
+            animation: fadeUp .6s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="announcement">A collection of beautiful spaces · Dindigul</div>
+
+    <header>
+        <div class="container navbar">
+            <a class="logo" href="index.html">CLASSIC INTERIOR<span>DINDIGUL · DESIGN STUDIO</span></a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn">Get in touch</a>
+        </div>
+    </header>
+
+    <main>
+        <section style="background:var(--cream)">
+            <div class="container">
+                <div class="eyebrow">Our portfolio inspiration</div>
+                <h1>Beautiful spaces.<br><em>Endless possibilities.</em></h1>
+                <p style="max-width:600px;margin-top:20px">
+                    Explore interior styles and discover ideas for your dream home.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">Gallery</div>
+                    <h2>Explore our design styles.</h2>
+                </div>
+
+                <div class="filter-row">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="living">Living Room</button>
+                    <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                    <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+                    <button class="filter-btn" data-filter="dining">Dining</button>
+                </div>
+
+                <div class="gallery">
+                    <div class="gallery-card reveal" data-category="living">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                            alt="Modern living room">
+                        <h3>Modern Living Room</h3>
+                        <p>Warm minimalist style</p>
+                    </div>
+
+                    <div class="gallery-card reveal" data-category="kitchen">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+                            alt="Contemporary kitchen">
+                        <h3>Luxury Modular Kitchen</h3>
+                        <p>Functional elegance</p>
+                    </div>
+
+                    <div class="gallery-card reveal" data-category="bedroom">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                            alt="Minimal bedroom">
+                        <h3>Elegant Bedroom</h3>
+                        <p>Comfort and calm</p>
+                    </div>
+
+                    <div class="gallery-card reveal" data-category="dining">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                            alt="Dining interior">
+                        <h3>Modern Dining</h3>
+                        <p>Spaces to gather</p>
+                    </div>
+
+                    <div class="gallery-card reveal" data-category="living">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                            alt="Minimal home interior">
+                        <h3>Contemporary Home</h3>
+                        <p>Natural textures</p>
+                    </div>
+
+                    <div class="gallery-card reveal" data-category="bedroom">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                            alt="Luxury bedroom">
+                        <h3>Luxury Bedroom</h3>
+                        <p>Modern comfort</p>
+                    </div>
+                </div>
+
+                <p style="font-size:11px;margin-top:25px">
+                    Note: These are illustrative inspiration photographs, not verified photographs of completed Classic
+                    Interior projects.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="cta">
+                <h2>Let's design your next space.</h2>
+                <a href="contact.html" class="btn">Start a project ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>CLASSIC INTERIOR</h3>
+            <p>Dindigul, Tamil Nadu · 070100 97602</p>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
